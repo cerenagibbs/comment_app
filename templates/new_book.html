@@ -1,0 +1,43 @@
+<DOCTYPE>
+    <html>
+        <head>
+            <!-- <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='main/teacher_feedback.css') }}">  -->
+        </head>
+            <body>
+            <a href="/">Back To Home Page</a>
+
+            <form action="/school/new_book" method="POST">
+                {{ template_form.hidden_tag() }}<!-- for security purposes -->
+                
+             
+                <p> {{ template_form.student_name.label }} 
+                    {{ template_form.student_name() }} </p>
+
+                <div class="book">
+                    <tr>{% for btn in template_form.book_chosen %}
+                        <td>{{ btn }}</td>
+                        <td>{{ btn.label }}</td>
+                        {% endfor %}</tr>
+                </div>
+
+                
+                <p> {{ template_form.choose_this_book() }}</p>
+
+               
+
+
+                 
+                    {% for item in book %}
+                  
+                    <td>{{ item.student_name }}</td>
+                    <br>
+                    <td> {{ item.book_chosen }}</td>
+                    <br>
+                    </p>
+                    {% endfor %}
+                    </tr>
+                    
+              </form>
+         </body>
+      </html>
+</DOCTYPE>

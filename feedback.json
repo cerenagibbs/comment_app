@@ -1,0 +1,32 @@
+[
+    {
+        "student_name": "some name",
+        "class_chosen": "some class",
+        "teacher_feedback": "some feedback"
+    },
+    {
+        "student_name": "evania",
+        "class_chosen": "Math",
+        "teacher_feedback": "good"
+    },
+    {
+        "student_name": "max",
+        "class_chosen": "English",
+        "teacher_feedback": "good"
+    },
+    {
+        "student_name": "max",
+        "class_chosen": "English",
+        "teacher_feedback": "good"
+    },
+    {
+        "student_name": "erin",
+        "class_chosen": "Science",
+        "teacher_feedback": "excellent"
+    },
+    {
+        "student_name": "Lucy",
+        "class_chosen": "Science",
+        "teacher_feedback": "good"
+    }
+]

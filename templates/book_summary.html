@@ -1,0 +1,21 @@
+<DOCTYPE>
+    <html>
+        <body>
+            <a href="/">Back To Home Page</a>
+            
+            <form action="/school/book_summary" method="POST"><!--"POST" these forms at the link -->
+                {{ template_form.hidden_tag() }}<!-- for security purposes -->
+                
+             
+                <p> {{ template_form.book_title.label }} 
+                    {{ template_form.book_title() }} </p>
+                <p> {{ template_form.book_summary.label }}
+                    {{ template_form.book_summary() }} </p>
+                <p> {{ template_form.submit() }}</p>
+
+
+                    
+              </form>
+         </body>
+      </html>
+</DOCTYPE>
